@@ -23,15 +23,22 @@ class todoservice{
     }
 
     add_todo(todo){
-        // Your code here
+        this.todos.todo.push(todo);
+        return true;
     }
 
     delete_todo(id){
         // Your code here
+        if (this.todos.todo.length <= id) return false;
+        this.todos.todo.pop(id);
+        return true;
     }
 
     update_todo(id, todo){
         // Your code here
+        if (this.todos.todo.length <= id) return false;
+        this.todos.todo[id] = todo;
+        return true;
     }
 }
 
