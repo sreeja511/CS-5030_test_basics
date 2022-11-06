@@ -37,5 +37,5 @@ workflows:
               only:
                 - master
       - build-and-test-javascript
-      - build-and-test-api-js
+     
       
